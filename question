@@ -28,7 +28,7 @@ public class que2 {
 
 Q2.2
 
-package suprabho;
+
 import java.util.Scanner;
 import java.util.Arrays;
 

@@ -1,1 +1,61 @@
+Q 2.1
+
+import java.util.Scanner;
+public class que2 {
+
+	public static void main(String[] args) {
+		int cost=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the distance: ");
+		int dis=sc.nextInt();
+		if(dis<=5) {
+			cost=10*dis;
+		}
+		else if(dis>5 && dis<=20) {
+			cost=50+(15*dis);
+		}
+		else if (dis>20 && dis<45) {
+			cost=170+(25*5);
+		}
+		else {
+			System.out.println("Enter distance less than 45km");
+		}
+		System.out.println("total cost is "+cost);
+		}
+	}
+
+
+
+Q2.2
+
+package suprabho;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class que3 {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter 9 digit registration number: ");
+		int [] RegNo=new int[9];
+		String input=sc.nextLine();
+		for(int i=0;i<9;i++) {
+			RegNo[i]=Character.getNumericValue(input.charAt(i));
+		}
+		if(RegNo[0]==2 && RegNo[1]==1) {
+			System.out.println("Year of joining is 2021");
+		}
+		else if(RegNo[0]==2 && RegNo[1]==2) {
+			System.out.println("Year of joining is 2022");
+		}
+		else if(RegNo[0]==2 && RegNo[1]==3) {
+			System.out.println("Year of joining is 2023");
+		}
+		else if(RegNo[0]==2 && RegNo[1]==4) {
+			System.out.println("Year of joining is 2024");
+		}
+		else {
+			System.out.println("Wrong registration number");}
+	}
+
+}
 
